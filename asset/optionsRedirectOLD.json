@@ -1,9 +1,9 @@
 {
-    "createdBy": "Redirector v0.1",
-    "createdAt": "2024-03-05T20:11:13.483Z",
+    "createdBy": "Redirector v3.5.3",
+    "createdAt": "2024-03-04T08:53:10.015Z",
     "redirects": [
         {
-            "description": "VCC (dailymotion)",
+            "description": "dailymotion vers VCC",
             "exampleUrl": "https://www.dailymotion.com/video/x8t3xg0",
             "exampleResult": "https://video-circuit-court.fr/dm.php?v=x8t3xg0",
             "error": null,
@@ -20,7 +20,7 @@
             ]
         },
         {
-            "description": "VCC (vimeo avec paramètres)",
+            "description": "vimeo vers VCC",
             "exampleUrl": "https://vimeo.com/819819044?h15",
             "exampleResult": "https://video-circuit-court.fr/vi.php?v=819819044",
             "error": null,
@@ -37,7 +37,7 @@
             ]
         },
         {
-            "description": "VCC (vimeo)",
+            "description": "vimeo vers VCC sans param",
             "exampleUrl": "https://vimeo.com/819819044",
             "exampleResult": "https://video-circuit-court.fr/vi.php?v=819819044",
             "error": null,
@@ -54,7 +54,7 @@
             ]
         },
         {
-            "description": "VCC (youtube avec paramètre)",
+            "description": "youtube sur VCC avec param suppl",
             "exampleUrl": "https://www.youtube.com/watch?v=xjS6SftYQaQ&aaa",
             "exampleResult": "https://video-circuit-court.fr/yt.php?v=xjS6SftYQaQ",
             "error": null,
@@ -71,7 +71,7 @@
             ]
         },
         {
-            "description": "VCC (youtube)",
+            "description": "youtube sur VCC",
             "exampleUrl": "https://www.youtube.com/watch?v=xjS6SftYQaQ",
             "exampleResult": "https://video-circuit-court.fr/yt.php?v=xjS6SftYQaQ",
             "error": null,
@@ -97,7 +97,7 @@
             ]
         },
         {
-            "description": "VCC (youtube embed)",
+            "description": "youtube embed sur VCC",
             "exampleUrl": "https://www.youtube.com/embed/Ett5eqQopUw?autoplay=1&enablejsapi=1&origin=https://www.bing.com&rel=0",
             "exampleResult": "https://video-circuit-court.fr/yt.php?v=Ett5eqQopUw",
             "error": null,
@@ -114,7 +114,7 @@
             ]
         },
         {
-            "description": "VCC (youtube interne à duckduckgo)",
+            "description": "interne ddg sur VCC",
             "exampleUrl": "https://duckduckgo.com/?t=ffab&q=ecologie&atb=v355-1&iax=videos&ia=videos&iai=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D8qQygSVWq5k",
             "exampleResult": "https://video-circuit-court.fr/yt.php?v=8qQygSVWq5k",
             "error": null,
@@ -131,7 +131,7 @@
             ]
         },
         {
-            "description": "DuckduckGo (youtube search)",
+            "description": "youtube search vers ddg",
             "exampleUrl": "https://www.youtube.com/results?search_query=tesla",
             "exampleResult": "https://duckduckgo.com/?t=ffab&q=tesla&atb=v355-1&iax=videos&ia=videos",
             "error": null,
@@ -148,7 +148,7 @@
             ]
         },
         {
-            "description": "VCC (dailymotion)",
+            "description": "dailymotion vers VCC",
             "exampleUrl": "https://www.dailymotion.com/video/x8s1e2g?syndication=273844",
             "exampleResult": "https://video-circuit-court.fr/dm.php?v=x8s1e2g",
             "error": null,
@@ -165,7 +165,7 @@
             ]
         },
         {
-            "description": "VCC (youtube time)",
+            "description": "interne DDG sur youtube vers VCC",
             "exampleUrl": "https://www.youtube.com/watch?time_continue=5&v=eAiCGg6GpBQ&embeds_referring_euri=https%3A%2F%2Fduckduckgo.com%2F&feature=emb_logo",
             "exampleResult": "https://video-circuit-court.fr/yt.php?v=eAiCGg6GpBQ",
             "error": null,
@@ -182,7 +182,7 @@
             ]
         },
         {
-            "description": "VCC (youtube sans url)",
+            "description": "interne youtube",
             "exampleUrl": "/watch?v=2tD0fLX4e9g",
             "exampleResult": "https://video-circuit-court.fr/yt.php?v=2tD0fLX4e9g",
             "error": null,
@@ -199,7 +199,7 @@
             ]
         },
         {
-            "description": "VCC (youtube short)",
+            "description": "",
             "exampleUrl": "https://www.youtube.com/shorts/Lfr_sNix710",
             "exampleResult": "https://video-circuit-court.fr/yt.php?v=Lfr_sNix710",
             "error": null,
@@ -216,7 +216,7 @@
             ]
         },
         {
-            "description": "Sponsor Carlton Lyon (booking Lyon)",
+            "description": "",
             "exampleUrl": "https://www.booking.com/city/fr/lyon.fr.html?aid=305370&pagename=lyon&label=msn-fX4spvdaTvBb5xOu_qhYOA-80470687001307:tikwd-80470842779776:loc-66:nes:mte:lp127267:dec:qshotel%20carlton%20lyon",
             "exampleResult": "https://www.hotel-carlton-lyon.com/",
             "error": null,
@@ -233,7 +233,7 @@
             ]
         },
         {
-            "description": "Sponsor Carlton Lyon (guestreservations)",
+            "description": "",
             "exampleUrl": "https://www.guestreservations.com/hotel-carlton-lyon-mgallery-by-sofitel/booking",
             "exampleResult": "https://www.hotel-carlton-lyon.com/",
             "error": null,
@@ -250,7 +250,7 @@
             ]
         },
         {
-            "description": "Sponsor Carlton Lyon (hotels.com)",
+            "description": "",
             "exampleUrl": "https://fr.hotels.com/nh1716791/hotels-vieux-lyon-lyon-france/?locale=fr_FR&siteid=300000010&gclsrc=3p.ds&semcid=HCOM-FR.UB.BING.DT-c-FR.HOTEL&semdtl=a1418029594.b11340305456082585.g1kwd-83770217841233.e1c.m18a8963a3675f1d6d2f750678e7144807.r1.c13dyE7wVCTfXrtIgmnsu3Wg.j1126376.k140150.d183769197599821.h1b.i1.l1.n1.o1.p1.q1.s1.t1.x1.f1.u1.v1.w1",
             "exampleResult": "https://www.hotel-carlton-lyon.com/",
             "error": null,
@@ -267,7 +267,7 @@
             ]
         },
         {
-            "description": "Sponsor Carlton Lyon (booking)",
+            "description": "",
             "exampleUrl": "https://www.booking.com/hotel/fr/carlton-lyon.fr.html",
             "exampleResult": "https://www.hotel-carlton-lyon.com/",
             "error": null,
@@ -284,7 +284,7 @@
             ]
         },
         {
-            "description": "Sponsor Carlton Lyon (booking2)",
+            "description": "",
             "exampleUrl": "https://www.booking.com/searchresults.fr.html?aid=330633&label=msn-QQtc6C_Hbtz5UGyqIgY9Cw-80814206750626%3Atikwd-17135211370%3Aloc-66%3Anes%3Amte%3Alp127176%3Adec%3Aqshotel%20carlton%20lyon&highlighted_hotels=85623&redirected=1&city=-120171&hlrd=no_dates&source=hotel&expand_sb=1&keep_landing=1&sid=b04ae8a593ffdf32a8f6ca2dcb4e3c1e",
             "exampleResult": "https://www.hotel-carlton-lyon.com/",
             "error": null,
@@ -301,7 +301,7 @@
             ]
         },
         {
-            "description": "Sponsor Carlton Lyon (ebooking)",
+            "description": "",
             "exampleUrl": "https://www.ebooking.com/fr/c/hotel-carlton-lyon-mgallery-hotel-collection-h/?currency=EUR&utm_source=google&utm_medium=cpc&utm_campaign=20700850464&utm_adgroup=157437667120&utm_adid=678659995649&gad_source=1&gclid=Cj0KCQiA5-uuBhDzARIsAAa21T_8681tGFEHxtdVJbTlUSJ6mz70aV0fvvNRtvsHQkM4KN28CeFok1gaAu-qEALw_wcB",
             "exampleResult": "https://www.hotel-carlton-lyon.com/",
             "error": null,
@@ -318,7 +318,7 @@
             ]
         },
         {
-            "description": "Sponsor Carlton Lyon (accor)",
+            "description": "",
             "exampleUrl": "https://all.accor.com/hotel/2950/index.fr.shtml",
             "exampleResult": "https://www.hotel-carlton-lyon.com/",
             "error": null,
@@ -335,7 +335,7 @@
             ]
         },
         {
-            "description": "Sponsor Carlton Lyon (google)",
+            "description": "",
             "exampleUrl": "https://www.google.fr/search?q=hotel+carlton+lyon&sca_esv=a691801792404b30&source=hp&ei=EYXbZfXgOKfqkdUPpJO08As&iflsig=ANes7DEAAAAAZduTISmLd8x34hhnd6fnjBqj2ihC9G65&ved=0ahUKEwi1rfPZjceEAxUndaQEHaQJDb4Q4dUDCA0&uact=5&oq=hotel+carlton+lyon&gs_lp=Egdnd3Mtd2l6IhJob3RlbCBjYXJsdG9uIGx5b24yGhAuGIMBGK8BGMcBGLEDGIAEGJgFGJkFGJ4FMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESMwyUOgJWJgvcAJ4AJABAJgB3QGgAYMLqgEGMTguMC4xuAEDyAEA-AEBmAIVoALNC6gCCsICEBAAGAMYjwEY5QIY6gIYjAPCAhAQLhgDGI8BGOUCGOoCGIwDwgILEAAYgAQYsQMYgwHCAg4QLhjHARixAxjRAxiABMICDhAuGIAEGIoFGLEDGIMBwgIIEAAYgAQYsQPCAg4QABiABBiKBRixAxiDAcICCxAuGIAEGLEDGNQCwgIREC4YgAQYsQMYgwEYxwEY0QPCAggQLhiABBixA8ICBRAuGIAEwgIOEAAYgAQYigUYkgMYuATCAggQABiABBiSA8ICCxAAGIAEGLEDGMkDwgIOEC4YgAQYxwEYrwEYjgXCAgsQABiABBixAxiSA8ICCxAAGIAEGIoFGJIDwgIREC4YgAQYsQMYgwEYxwEYrwHCAhEQLhiABBjHARivARiYBRiZBcICCxAuGIAEGLEDGIMBwgIUEC4YrwEYxwEYsQMYgAQYmAUYmQXCAhcQLhiABBixAxjHARivARiYBRieBRiZBcICFxAuGIMBGK8BGMcBGLEDGIAEGJgFGJkFwgIaEC4YgAQYsQMYgwEYxwEYrwEYmAUYngUYmQXCAgsQLhiDARixAxiABMICERAuGIAEGMcBGK8BGJgFGJoFwgIUEC4YgAQYxwEYrwEYmAUYngUYmQXCAhcQLhiABBixAxiDARjHARivARiYBRiZBcICFBAuGIAEGLEDGMcBGK8BGJgFGJkFwgIUEC4YgAQYxwEYrwEYmAUYmQUYjgWYAwaSBwYyMC4wLjE&sclient=gws-wiz",
             "exampleResult": "https://www.hotel-carlton-lyon.com/",
             "error": null,
@@ -352,7 +352,7 @@
             ]
         },
         {
-            "description": "Sponsor Carlton Lyon (duckduckgo)",
+            "description": "",
             "exampleUrl": "https://duckduckgo.com/?q=hotel+carlton+lyon&atb=v355-1&ia=web",
             "exampleResult": "https://www.hotel-carlton-lyon.com/",
             "error": null,
@@ -369,7 +369,7 @@
             ]
         },
         {
-            "description": "Sponsor Carlton Lyon (bing)",
+            "description": "",
             "exampleUrl": "https://www.bing.com/search?q=hotel+carlton+lyon&form=QBLH&sp=-1&ghc=2&lq=0&pq=hotel+carlton+lyon&sc=8-18&qs=n&sk=&cvid=17BCCEB837D94802AFDF5C4DB90C3142&ghsh=0&ghacc=0&ghpl=",
             "exampleResult": "https://www.hotel-carlton-lyon.com/",
             "error": null,
@@ -386,7 +386,7 @@
             ]
         },
         {
-            "description": "Sponsor Restaurant Shimla (just-eat)",
+            "description": "",
             "exampleUrl": "https://www.just-eat.fr/menu/shimla?kw2=&gclsrc=ds",
             "exampleResult": "https://le-shimla.com",
             "error": null,
@@ -403,7 +403,7 @@
             ]
         },
         {
-            "description": "Sponsor Tenk (Black Harvest Allocine)",
+            "description": "Black Harvest Allocine",
             "exampleUrl": "https://www.allocine.fr/film/fichefilm_gen_cfilm=634.html",
             "exampleResult": "https://www.on-tenk.com/fr/documentaires/histoire/black-harvest",
             "error": null,
@@ -420,7 +420,7 @@
             ]
         },
         {
-            "description": "Sponsor Tenk (Black Harvest Wikipedia)",
+            "description": "Black Harvest Wikipedia",
             "exampleUrl": "https://en.wikipedia.org/wiki/Black_Harvest_(1992_film)",
             "exampleResult": "https://www.on-tenk.com/fr/documentaires/histoire/black-harvest",
             "error": null,
@@ -437,7 +437,7 @@
             ]
         },
         {
-            "description": "Sponsor Tenk (Black Harvest justwatch)",
+            "description": "Black Harvest justwatch",
             "exampleUrl": "https://www.justwatch.com/fr/film/black-harvest",
             "exampleResult": "https://www.on-tenk.com/fr/documentaires/histoire/black-harvest",
             "error": null,
@@ -454,7 +454,7 @@
             ]
         },
         {
-            "description": "Sponsor Tenk (Black Harvest imdb)",
+            "description": "Black Harvest imdb",
             "exampleUrl": "https://www.imdb.com/title/tt0103817/",
             "exampleResult": "https://www.on-tenk.com/fr/documentaires/histoire/black-harvest",
             "error": null,
