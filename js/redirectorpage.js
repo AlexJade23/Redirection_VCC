@@ -265,28 +265,29 @@ function moveDownBottom(index) {
 	saveChanges();
 }
 
-async function chargerTableauRedirects() {
-	try {
-	  var cheminFichier = chrome.runtime.getURL('/asset/optionsRedirect.json');
-	  var response = await fetch(cheminFichier);
-	  var data = await response.json();
+// async function chargerTableauRedirects() {
+// 	try {
+// 	  var cheminFichier = chrome.runtime.getURL('/asset/optionsRedirect.json');
+// 	  var response = await fetch(cheminFichier);
+// 	  var data = await response.json();
   
-	  // Accédez au tableau "redirects" dans l'objet JSON
-	  var redirects = data.redirects;
-	  console.log('chargerTableauRedirects', redirects);
-	  return redirects;
-	} catch (error) {
-	  console.error('Erreur lors de la récupération du fichier JSON :', error);
-	  return []; // Retourne un tableau vide en cas d'erreur
-	}
-  }
+// 	  // Accédez au tableau "redirects" dans l'objet JSON
+// 	  var redirects = data.redirects;
+// 	  console.log('chargerTableauRedirects', redirects);
+// 	  return redirects;
+// 	} catch (error) {
+// 	  console.error('Erreur lors de la récupération du fichier JSON :', error);
+// 	  return []; // Retourne un tableau vide en cas d'erreur
+// 	}
+//   }
 
 //All the setup stuff for the page
 async function pageLoad() {
 	template = el('#redirect-row-template');
 	template.parentNode.removeChild(template);
-	let redirects = await chargerTableauRedirects();
-	console.log('redirects', redirects);
+	let redirects = [];
+	// let redirects = await chargerTableauRedirects();
+	// console.log('redirects', redirects);
 
 	//Need to proxy this through the background page, because Firefox gives us dead objects
 	//nonsense when accessing chrome.storage directly.

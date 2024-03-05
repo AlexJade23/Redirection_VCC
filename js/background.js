@@ -256,7 +256,6 @@ function updateIcon() {
 	});	
 }
 
-
 //Firefox doesn't allow the "content script" which is actually privileged
 //to access the objects it gets from chrome.storage directly, so we
 //proxy it through here.
@@ -396,12 +395,30 @@ chrome.storage.local.get({
 	setupInitial(); 
 });
 
-//wrapped the below inside a function so that we can call this once we know the value of storageArea from above. 
+//wrapped the below inside a function so that we can call this once we know the value of storageArea from above.
+
+
+// Fonction pour charger le fichier JSON
+async function chargerFichierJSON(chemin) {
+    var response = await fetch(chrome.runtime.getURL(chemin));
+    var data = await response.json();
+    return data.redirects || [];
+}
 
 function setupInitial() {
 	chrome.storage.local.get({enableNotifications:false},function(obj){
 		enableNotifications = obj.enableNotifications;
 	});
+	
+
+	chargerFichierJSON('asset/optionsRedirect.json').then((redirects) => {
+        // Stockez les règles de redirection dans le stockage local
+        chrome.storage.local.set({ redirects }, function () {
+            log('Redirect rules loaded from JSON file.');
+            // Continuez avec la configuration initiale
+            setUpRedirectListener();
+        });
+    });
 
 	chrome.storage.local.get({
 		disabled: false
