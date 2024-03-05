@@ -105,3 +105,9 @@ toolbarbutton#toggle-button--redirectoreinaregilssoncom-redirector[image*="disab
 ```
 
 If you don't know what the `userChrome.css` file is, or how to edit it, please look it up on a Firefox forum instead of asking about it in this repository. Thanks!
+
+
+###
+''''
+Mise en place de redirection dès l'installation. 
+Il faut ajouter/supprimer les redirections présente dans le fichier asset/optionsredirect.json. Puis mettre à jour l'extention dans le navigateur.

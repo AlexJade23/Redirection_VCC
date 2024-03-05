@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>REDIRECTOR</title>
+		<title>Video en Circuit Court</title>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="css/redirector.css" />
 		<!-- ☈ -->
@@ -128,10 +128,9 @@
 
 		<div id="blur-wrapper">
 
-			<h1>REDIRECTOR</h1>
-			<h5>Go where <em>YOU</em> want!</h5>
+			<h1>Video en Circuit Court</h1>
 
-			<div id="menu">
+			<div id="menu" hidden>
 				<a id="create-new-redirect" class="btn blue large">Create new redirect</a>
 
 				<!-- Importing/Exporting of redirects -->
@@ -155,8 +154,12 @@
 			<div class="redirect-table">
 				<div class="redirect-rows">
 					<div class="redirect-row" id="redirect-row-template" >
+						<div class="d-flex flex-row">
+
 							<h4><span class="disabled-marker" data-show="disabled">[Disabled] </span><span data-bind="description" data-class="disabled:disabled"></span></h4>
-							<div class="redirect-info" data-class="disabled:disabled">
+							<button class="btn medium blue" data-action="toggleDisabled"><span data-show="disabled">Off</span><span data-show="!disabled">On</span></button>
+						</div>
+							<div class="redirect-info hidden" data-class="disabled:disabled">
 								<div>
 									<label>Redirect:</label>
 									<p data-bind="includePattern"></p>
@@ -178,28 +181,34 @@
 								</div>
 							</div>
 							<div>
-								<button class="btn medium blue" data-action="toggleDisabled"><span data-show="disabled">Enable</span><span data-show="!disabled">Disable</span></button>
-								<button class="btn medium green" data-action="editRedirect">Edit</button>
-								<button class="btn medium red" data-action="confirmDeleteRedirect">Delete</button>
-								<span class="hidden">
-									<button class="btn medium grey move-uptop-btn arrows" data-action="moveUpTop" data-disabled="$first">⟰</button>
-								</span>
+								<div class="hidden">
 
-								<button class="btn medium grey move-up-btn" data-action="moveUp" data-disabled="$first">▲</button>
-								<button class="btn medium grey move-down-btn" data-action="moveDown" data-disabled="$last">▼</button>
-								<span class="hidden">
-									<button class="btn medium grey move-downbottom-btn arrows" data-action="moveDownBottom" data-disabled="$last">⟱</button>
-								</span>
-								<button class="btn medium grey" data-action="duplicateRedirect">Duplicate</button>
-							</div>
+									<button class="btn medium green hidden" data-action="editRedirect">Edit</button>
+									<button class="btn medium red hidden" data-action="confirmDeleteRedirect">Delete</button>
+									<span class="hidden">
+										<button class="btn medium grey move-uptop-btn arrows hidden" data-action="moveUpTop" data-disabled="$first">⟰</button>
+									</span>
+									
+									<button class="btn medium grey move-up-btn hidden" data-action="moveUp" data-disabled="$first">▲</button>
+									<button class="btn medium grey move-down-btn hidden" data-action="moveDown" data-disabled="$last">▼</button>
+									<span class="hidden">
+										<button class="btn medium grey move-downbottom-btn arrows" data-action="moveDownBottom" data-disabled="$last">⟱</button>
+									</span>
+									<button class="btn medium grey hidden" data-action="duplicateRedirect">Duplicate</button>
+								</div>
+								</div>
 							<label class="toggle-container">
 								<input class="checkbox" type="checkbox">
 								<span class="checkmark groupings hidden" data-action="toggleGrouping"></span>
 							</label>
 						</div>
 					</div>
-				<label id="storage-sync-option"><input type="checkbox" /> Enable Storage Sync</label>
-			</div>
+					<div class="hidden">
+						<label id="storage-sync-option" class="hidden" hidden><input type="checkbox" /> Enable Storage Sync</label>
+					</div>
+					
+				</div>
+				<a href="redirector.html" class="options-avancees"><button>Options avancées</button></a>
 
 			<footer>
 				<small>Redirector is created by <a target="_blank" href="http://einaregilsson.com">Einar Egilsson</a></small><br>
