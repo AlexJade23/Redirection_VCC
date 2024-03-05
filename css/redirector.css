@@ -123,6 +123,16 @@ input[type="radio"] {
   display: none;
 }
 
+
+.d-flex{
+  display: flex;
+}
+
+.flex-row{
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 /* Main menu with buttons */
 
 #menu {
@@ -171,6 +181,12 @@ input[type="radio"] {
   right:6px;
   top:0px;
   cursor:pointer;
+}
+
+.options-avancees{
+  display: block;
+  text-align: center;
+  margin-top: 15px;
 }
 
 /* Table of redirects */
