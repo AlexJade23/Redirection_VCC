@@ -3,8 +3,6 @@ function Redirect(o) {
 	this._init(o);
 }
 
-console.log('redirct.js');
-
 //temp, allow addon sdk to require this.
 if (typeof exports !== 'undefined') {
 	exports.Redirect = Redirect;

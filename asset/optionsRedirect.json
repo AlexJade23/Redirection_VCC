@@ -54,6 +54,23 @@
             ]
         },
         {
+            "description": "cheezpa.com to .fr",
+            "exampleUrl": "https://www.cheezpa.com",
+            "exampleResult": "https://cheezpa.fr",
+            "error": null,
+            "includePattern": "*cheezpa.com/*",
+            "excludePattern": "",
+            "patternDesc": "cheezpa .com to .fr",
+            "redirectUrl": "https://cheezpa.fr/$2",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
             "description": "youtube vers tournesol",
             "exampleUrl": "https://www.youtube.com/watch?v=uXBTN8CwdNE",
             "exampleResult": "https://tournesol.app/entities/yt:uXBTN8CwdNE",

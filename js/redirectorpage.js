@@ -265,30 +265,12 @@ function moveDownBottom(index) {
 	saveChanges();
 }
 
-// async function chargerTableauRedirects() {
-// 	try {
-// 	  var cheminFichier = chrome.runtime.getURL('/asset/optionsRedirect.json');
-// 	  var response = await fetch(cheminFichier);
-// 	  var data = await response.json();
-  
-// 	  // Accédez au tableau "redirects" dans l'objet JSON
-// 	  var redirects = data.redirects;
-// 	  console.log('chargerTableauRedirects', redirects);
-// 	  return redirects;
-// 	} catch (error) {
-// 	  console.error('Erreur lors de la récupération du fichier JSON :', error);
-// 	  return []; // Retourne un tableau vide en cas d'erreur
-// 	}
-//   }
-
 //All the setup stuff for the page
 async function pageLoad() {
 	template = el('#redirect-row-template');
 	template.parentNode.removeChild(template);
 	let redirects = [];
-	// let redirects = await chargerTableauRedirects();
-	// console.log('redirects', redirects);
-
+	
 	//Need to proxy this through the background page, because Firefox gives us dead objects
 	//nonsense when accessing chrome.storage directly.
 	chrome.runtime.sendMessage({ type: "get-redirects" }, function (response) {
@@ -300,29 +282,6 @@ async function pageLoad() {
 			REDIRECTS.push(new Redirect(element));
 		});
 
-
-		// if (response.redirects.length === 0) {
-
-		//Add example redirect for first time users...
-		// 	REDIRECTS.push(new Redirect(
-		// 		{
-		// 			"description": "Example redirect, try going to http://example.com/anywordhere",
-		// 			"exampleUrl": "http://example.com/some-word-that-matches-wildcard",
-		// 			"exampleResult": "https://google.com/search?q=some-word-that-matches-wildcard",
-		// 			"error": null,
-		// 			"includePattern": "http://example.com/*",
-		// 			"excludePattern": "",
-		// 			"patternDesc": "Any word after example.com leads to google search for that word.",
-		// 			"redirectUrl": "https://google.com/search?q=$1",
-		// 			"patternType": "W",
-		// 			"processMatches": "noProcessing",
-		// 			"disabled": false,
-		// 			"appliesTo": [
-		// 				"main_frame"
-		// 			]
-		// 		}
-		// 	));
-		// }
 		renderRedirects();
 	});
 
