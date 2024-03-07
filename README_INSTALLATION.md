@@ -34,6 +34,36 @@ Entrer dans le dossier Redirection_VCC:
 
 - Clic droit, envoyer vers dossier compressé (.zip)
 
+Vérifier que le module est compatible FireFox sur  https://www.extensiontest.com/ 
+Cela permet d’afficher les erreurs.
+Firefox se contente de dire: "Le module est corrompu", sans donner plus de détail. D’ou cet outil.
+
+
 C’est prêt pour être envoyé sur le store de Firefox pour y être signé.
 
 https://addons.mozilla.org/fr/developers/ Il faut un compte, et cliquer sur "Proposez votre premier module"
+
+
+Pour installer le module sur firefox (possible uniquement après signature): 
+ - Dans firefox ouvrire la page "about:addons"
+ - Cliquer sur la roue denté 
+ 	->Installer un module depuis un fichier
+- Selectionner le .zip précédement créé.
+
+
+
+#######################################
+Préparation pour Safari:
+#######################################
+
+/!\ cette méthode n’a pas pu être testé, elle est donc soumise a condition. 
+
+Faire une copie du zip créé pour Firefox, et remplacer l’extension ".zip" par ".safariextz"
+
+Importer le fichier dans le navigateur Safari.
+
+
+Pour le publier il faut aller sur: https://developer.apple.com/ Créer un compte et s’aquitter des 99$ d’abonnement annuel.
+
+Apple restant un environnement fermé, sans Ios, il n’est pas possible de confirmer le bon fonctionnement. 
+
